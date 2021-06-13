@@ -110,6 +110,34 @@ body
         gap:10px;
         padding: 0 50px;
     }
+    .explore_menu_container{
+        position:relative;
+    }
+    .explore_menu_gradientbg
+    {
+        position:absolute;
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        background-image: linear-gradient(
+        to right,
+        #ff512f ,
+        #dd2476  ,
+        #ff512f 
+ ); 
+ z-index: -3;
+ transform: skewY(-5deg);
+    }
+    .explore_menu_lists{
+        margin-top: 50px;
+        display:flex;
+        gap: 8px;
+    }
+    #pizza_card{
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
 
 
     
@@ -118,14 +146,22 @@ body
 
 @media (min-width:1020px){
     .container{
-        max: width 900px;
+        max-width:900px;
     }
     
     .hero__description{
         width:100%
     }
     .hero__text{
-        font-size:60px;
+        font-size:50px;
+    }
+    .explore_menu_lists{
+        gap:20px;
+        padding:0 20px;
+        
+    }
+    .explore_menu_text{
+        font-size: 50px;
     }
 
 }
