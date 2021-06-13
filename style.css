@@ -6,22 +6,23 @@
 /*Global*/
 body
 {
-    font-family:"Merriweather",sans-serif;
+    font-family:Merriweather,sans-serif;
     background-color: #ebf2ff;
     overflow-x:hidden;
 }
 
 .button__primary{
-    background-color: linear-gradient(
+    background-image: linear-gradient(
         to right,
-        #ff512f 0%
-        #dd2476 51%
-        #ff512f 100%
- );
+        #ff512f ,
+        #dd2476  ,
+        #ff512f 
+ ); 
  color:#fff;
  padding: 12px;
  border:none;
  border-radius:6px;
+ cursor: pointer;
 
 }
 .container{
@@ -51,6 +52,19 @@ body
 .hero__image{
     width:100%;
 }
+.hero__text{
+    font-size:30px;
+    color:#1d3557;
+    margin:20px 0;
+}
+/* Menu Style*/
+.food_menu_card{
+    width:100%;
+}
+.food_image{
+    width:100%;
+}
+
 
 
 @media (min-width:768px){
@@ -62,8 +76,9 @@ body
         width:150px;
     }
     .button__primary{
-        padding:20px;
+        padding: 12px 20px;
         font-size:20px;
+
     }
     .hero__container{
         display:flex;
@@ -71,24 +86,31 @@ body
         align-items: center;
         justify-content: space-between;
         gap:10px;
+        padding: 0 50px;
     }
 
 
     
 }
 
-}
+
 @media (min-width:1020px){
     .container{
-        max-width:1010px;
+        max: width 900px;
     }
-    .hero__image__container{
-        width:500px;
-        height:500px;
+    
+    .hero__description{
+        width:100%
+    }
+    .hero__text{
+        font-size:60px;
     }
 
 }
 @media (min-width:1400px){
-
+    .container{
+        max-width: 1250px;
+    }
+    
 
 }
