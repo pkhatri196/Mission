@@ -6,7 +6,7 @@
 /*Global*/
 body
 {
-    font-family:Merriweather,sans-serif;
+    font-family:Merriweather,monospace;
     background-color: #ebf2ff;
     overflow-x:hidden;
 }
@@ -60,9 +60,31 @@ body
 /* Menu Style*/
 .food_menu_card{
     width:100%;
+    background-color: #fff;
+    border-radius:8px;
+    margin-bottom:15px;
+    
+}
+.explore_menu_container{
+    margin-top: 50px;
+}
+.explore_menu_view_more{
+    display:flex;
+    justify-content: center;
+}
+.explore_menu_text{
+    font-size:30px;
+    color:#1d3557;
+    margin:20px 0; 
+    text-align: center;  
 }
 .food_image{
     width:100%;
+    border-radius:8px 8px 0 0;
+}
+
+.food_menu_card_description{
+    padding:20px;
 }
 
 
